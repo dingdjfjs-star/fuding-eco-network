@@ -1,0 +1,643 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326 (GeoJSON WGS84, 由 EPSG:32651 转换)"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 1.127395346741115,
+        "px": 856,
+        "grade": "一级",
+        "type": "pinch",
+        "id": "P01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.342518,
+          27.420247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.47885989551379127,
+        "px": 90,
+        "grade": "一般",
+        "type": "pinch",
+        "id": "P02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.415139,
+          27.414846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.5747687233010113,
+        "px": 297,
+        "grade": "二级",
+        "type": "pinch",
+        "id": "P03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.395767,
+          27.413132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 1.10200314741488,
+        "px": 1049,
+        "grade": "一级",
+        "type": "pinch",
+        "id": "P04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.165533,
+          27.25978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.780359880935663,
+        "px": 53,
+        "grade": "一级",
+        "type": "pinch",
+        "id": "P05"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.26778,
+          27.252342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.29124635072691374,
+        "px": 9,
+        "grade": "一般",
+        "type": "pinch",
+        "id": "P06"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.264214,
+          27.249565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.6849374558225615,
+        "px": 398,
+        "grade": "二级",
+        "type": "pinch",
+        "id": "P07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.168907,
+          27.222227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.8174939751995587,
+        "px": 460,
+        "grade": "一级",
+        "type": "pinch",
+        "id": "P08"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.149589,
+          27.208032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.5095523030383999,
+        "px": 21,
+        "grade": "二级",
+        "type": "pinch",
+        "id": "P09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.178724,
+          27.205103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.4482870818612775,
+        "px": 12,
+        "grade": "一般",
+        "type": "pinch",
+        "id": "P10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.181542,
+          27.201371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.5065847757545745,
+        "px": 24,
+        "grade": "一般",
+        "type": "pinch",
+        "id": "P11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.184367,
+          27.197368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.5751950499138959,
+        "px": 49,
+        "grade": "二级",
+        "type": "pinch",
+        "id": "P12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.141959,
+          27.186766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.48408201650382676,
+        "px": 89,
+        "grade": "一般",
+        "type": "pinch",
+        "id": "P13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.145479,
+          27.179259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.4681745183296915,
+        "px": 12,
+        "grade": "一般",
+        "type": "pinch",
+        "id": "P14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.152608,
+          27.172638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.48503976516083674,
+        "px": 15,
+        "grade": "一般",
+        "type": "pinch",
+        "id": "P15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.154169,
+          27.170775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mean_I": 0.5038198689866611,
+        "px": 62,
+        "grade": "一般",
+        "type": "pinch",
+        "id": "P16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.159441,
+          27.165739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          2305,
+          5357
+        ],
+        "mcr_base": 1158822.0,
+        "mcr_restored": 1055013.0,
+        "saving": 103809.0,
+        "gain_pct": 8.96,
+        "px": 635,
+        "grade": "一级",
+        "type": "barrier",
+        "id": "B01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.339103,
+          27.169535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          2,
+          1109
+        ],
+        "mcr_base": 1122974.0,
+        "mcr_restored": 1029580.0,
+        "saving": 93394.0,
+        "gain_pct": 8.32,
+        "px": 192,
+        "grade": "一级",
+        "type": "barrier",
+        "id": "B02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.351896,
+          27.459402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          2364,
+          4337
+        ],
+        "mcr_base": 332217.0,
+        "mcr_restored": 255133.0,
+        "saving": 77084.0,
+        "gain_pct": 23.2,
+        "px": 187,
+        "grade": "一级",
+        "type": "barrier",
+        "id": "B03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.303946,
+          27.247088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          1109,
+          5959
+        ],
+        "mcr_base": 1891270.0,
+        "mcr_restored": 1824963.0,
+        "saving": 66307.0,
+        "gain_pct": 3.51,
+        "px": 292,
+        "grade": "一级",
+        "type": "barrier",
+        "id": "B04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.339811,
+          27.17794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          2305,
+          2364
+        ],
+        "mcr_base": 295178.0,
+        "mcr_restored": 231145.0,
+        "saving": 64033.0,
+        "gain_pct": 21.69,
+        "px": 203,
+        "grade": "一级",
+        "type": "barrier",
+        "id": "B05"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.312226,
+          27.305713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          2305,
+          5959
+        ],
+        "mcr_base": 703102.0,
+        "mcr_restored": 639475.0,
+        "saving": 63627.0,
+        "gain_pct": 9.05,
+        "px": 147,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B06"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.242858,
+          27.095948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          2305,
+          2909
+        ],
+        "mcr_base": 117726.0,
+        "mcr_restored": 57126.0,
+        "saving": 60600.0,
+        "gain_pct": 51.48,
+        "px": 222,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.251587,
+          27.27043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          1823,
+          5959
+        ],
+        "mcr_base": 1793092.0,
+        "mcr_restored": 1733102.0,
+        "saving": 59990.0,
+        "gain_pct": 3.35,
+        "px": 162,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B08"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.384201,
+          27.182294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          2909,
+          5959
+        ],
+        "mcr_base": 785647.0,
+        "mcr_restored": 729049.0,
+        "saving": 56598.0,
+        "gain_pct": 7.2,
+        "px": 133,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.290689,
+          27.156698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          1109,
+          5196
+        ],
+        "mcr_base": 1528836.0,
+        "mcr_restored": 1474234.0,
+        "saving": 54603.0,
+        "gain_pct": 3.57,
+        "px": 123,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.468294,
+          27.278311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          2305,
+          5357
+        ],
+        "mcr_base": 1158822.0,
+        "mcr_restored": 1108419.0,
+        "saving": 50403.0,
+        "gain_pct": 4.35,
+        "px": 110,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.259649,
+          27.201026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          11,
+          2602
+        ],
+        "mcr_base": 282465.0,
+        "mcr_restored": 236366.0,
+        "saving": 46099.0,
+        "gain_pct": 16.32,
+        "px": 119,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.204872,
+          27.297381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          1109,
+          2305
+        ],
+        "mcr_base": 1260382.0,
+        "mcr_restored": 1216279.0,
+        "saving": 44102.0,
+        "gain_pct": 3.5,
+        "px": 125,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.243169,
+          27.304638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          2364,
+          5357
+        ],
+        "mcr_base": 955203.0,
+        "mcr_restored": 916834.0,
+        "saving": 38369.0,
+        "gain_pct": 4.02,
+        "px": 114,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.456232,
+          27.169273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair": [
+          1109,
+          5959
+        ],
+        "mcr_base": 1891270.0,
+        "mcr_restored": 1852916.0,
+        "saving": 38353.0,
+        "gain_pct": 2.03,
+        "px": 262,
+        "grade": "二级",
+        "type": "barrier",
+        "id": "B15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.341941,
+          27.164717
+        ]
+      }
+    }
+  ]
+}

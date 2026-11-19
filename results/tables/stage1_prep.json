@@ -1,0 +1,65 @@
+{
+  "grid": {
+    "crs": "EPSG:32651",
+    "res": 30,
+    "transform": [
+      30.0,
+      0.0,
+      194010.0,
+      0.0,
+      -30.0,
+      3040170.0
+    ],
+    "width": 2748,
+    "height": 2074
+  },
+  "reused": {
+    "wc30_mode": "E:\\zcode\\探索前沿\\fuding-eco-priority\\results\\rasters\\wc30_mode.tif",
+    "slope30": "E:\\zcode\\探索前沿\\fuding-eco-priority\\results\\rasters\\slope30.tif",
+    "flowacc30": "E:\\zcode\\探索前沿\\fuding-eco-priority\\results\\rasters\\flowacc30.tif",
+    "fuding_dem30_utm51n": "E:\\zcode\\探索前沿\\fuding-eco-priority\\results\\rasters\\fuding_dem30_utm51n.tif",
+    "ndvi2025_30m": "E:\\zcode\\探索前沿\\fuding-eco-priority\\results\\rasters\\ndvi2025_30m.tif",
+    "dim_degradation30": "E:\\zcode\\探索前沿\\fuding-eco-priority\\results\\rasters\\dim_degradation30.tif",
+    "priority_class30": "E:\\zcode\\探索前沿\\fuding-eco-priority\\results\\rasters\\priority_class30.tif"
+  },
+  "derived": {
+    "road_level30": "OSM roads 5级->3档(3=高速/主干/一级,2=二级,1=三级)",
+    "village30": "OSM 184 居民点",
+    "reserve30": "OSM 8 保护地",
+    "stream30": "flowacc30>=1000(汇水0.9km²)溪流网"
+  },
+  "qa": {
+    "ndvi": {
+      "min": -0.6620724201202393,
+      "p50": 0.6749786734580994,
+      "max": 0.9284713864326477,
+      "valid_px": 4571781
+    },
+    "slope": {
+      "min": 3.642767524070223e-06,
+      "p50": 17.925739288330078,
+      "max": 63.442264556884766,
+      "valid_px": 3487136
+    },
+    "priority": {
+      "min": 1.0,
+      "p50": 2.0,
+      "max": 3.0,
+      "valid_px": 1792033
+    },
+    "degradation": {
+      "min": 5.58025419650221e-07,
+      "p50": 0.5000002980232239,
+      "max": 1.0,
+      "valid_px": 1792033
+    },
+    "road_px": {
+      "lv3": 23995,
+      "lv2": 14892,
+      "lv1": 30317
+    },
+    "stream_px": 531962,
+    "reserve_px": 5227,
+    "skipped_roads": 0
+  }
+}

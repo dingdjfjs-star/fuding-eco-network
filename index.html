@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福鼎市生态网络构建与修复关键节点识别 · MSPA + 电路理论</title>
+<style>
+  :root{
+    --paper:#faf7f0; --ink:#2b2b2b; --red:#c23b22; --blue:#4a6fa5;
+    --green:#2e6e3a; --gold:#b8860b; --line:#d8d2c4; --soft:#6b6455;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;
+    line-height:1.75; font-size:15.5px;
+  }
+  .wrap{max-width:1060px; margin:0 auto; padding:0 20px 80px}
+  header{border-bottom:3px double var(--ink); padding:56px 0 30px; margin-bottom:34px}
+  .kicker{letter-spacing:.35em; font-size:12px; color:var(--green); font-weight:700}
+  h1{font-size:34px; line-height:1.3; margin:10px 0 6px; font-weight:800}
+  .sub{color:var(--soft); font-size:15px}
+  .badges{margin-top:16px}
+  .badge{
+    display:inline-block; border:1px solid var(--ink); border-radius:3px;
+    padding:2px 10px; margin:3px 6px 3px 0; font-size:12.5px; background:#fff;
+  }
+  .badge.b{border-color:var(--blue); color:var(--blue)}
+  .badge.r{border-color:var(--red); color:var(--red)}
+  .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:34px 0 10px}
+  .stat{
+    background:#fff; border:1px solid var(--line); border-top:3px solid var(--green);
+    padding:16px 18px; text-align:center;
+  }
+  .stat:nth-child(2){border-top-color:var(--blue)}
+  .stat:nth-child(3){border-top-color:var(--red)}
+  .stat:nth-child(4){border-top-color:var(--gold)}
+  .stat .n{font-size:30px; font-weight:800; letter-spacing:.02em}
+  .stat .t{font-size:12.5px; color:var(--soft); margin-top:2px}
+  h2{
+    font-size:21px; margin:52px 0 16px; padding-left:12px;
+    border-left:5px solid var(--green); font-weight:800;
+  }
+  h3{font-size:16.5px; margin:20px 0 8px}
+  p{margin:8px 0}
+  .flow{display:flex; flex-wrap:wrap; gap:6px; align-items:stretch; margin:18px 0}
+  .step{
+    background:#fff; border:1px solid var(--ink); padding:9px 13px; font-size:13px;
+    display:flex; flex-direction:column; justify-content:center; flex:1 1 0; min-width:120px;
+  }
+  .step b{font-size:13.5px}
+  .step span{color:var(--soft); font-size:11.5px}
+  .arrow{align-self:center; color:var(--green); font-weight:800; font-size:16px}
+  .star{color:var(--red); font-weight:700}
+  figure{
+    background:#fff; border:1px solid var(--line); margin:22px 0; padding:16px 16px 12px;
+  }
+  figure img{width:100%; display:block; border:1px solid var(--line)}
+  figcaption{font-size:13px; color:var(--soft); margin-top:10px}
+  figcaption b{color:var(--ink)}
+  table{width:100%; border-collapse:collapse; background:#fff; font-size:14px; margin:14px 0}
+  th,td{border:1px solid var(--line); padding:8px 12px; text-align:left}
+  th{background:#f1ecdf; font-weight:700}
+  td.num{text-align:right; font-variant-numeric:tabular-nums}
+  .note{
+    background:#fdf6e9; border:1px solid var(--gold); padding:14px 18px;
+    font-size:14px; margin:16px 0;
+  }
+  .note b{color:var(--gold)}
+  code{
+    font-family:Consolas,"Courier New",monospace; font-size:13px;
+    background:#f1ecdf; padding:1px 6px; border-radius:3px;
+  }
+  pre{
+    background:#2b2b2b; color:#f0ead8; padding:16px 18px; overflow-x:auto;
+    font-size:13px; line-height:1.6; margin:14px 0;
+  }
+  pre code{background:none; color:inherit; padding:0}
+  ul{margin:8px 0 8px 22px}
+  li{margin:5px 0}
+  .cta{margin-top:26px}
+  .btn{
+    display:inline-block; background:var(--ink); color:var(--paper); text-decoration:none;
+    padding:10px 22px; font-size:14px; margin:4px 10px 4px 0; border-radius:3px;
+  }
+  .btn.ghost{background:transparent; color:var(--ink); border:1px solid var(--ink)}
+  footer{
+    border-top:1px solid var(--line); margin-top:60px; padding-top:18px;
+    font-size:12.5px; color:var(--soft);
+  }
+  @media (max-width:760px){
+    .stats{grid-template-columns:repeat(2,1fr)}
+    h1{font-size:26px}
+    .flow{flex-direction:column}
+    .arrow{transform:rotate(90deg); align-self:center}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">生态安全格局作品集 · ECOLOGICAL NETWORK PORTFOLIO</div>
+  <h1>福鼎市生态网络构建与修复关键节点识别</h1>
+  <div class="sub">MSPA 形态学源地 → 五因子阻力面 → MCR 廊道 → 廊道网络电路模拟 → 修复优先级决策表 · 与姊妹项目《生态修复优先区》同底座互证</div>
+  <div class="badges">
+    <span class="badge">Python 3.13</span>
+    <span class="badge">rasterio · scipy · pyproj</span>
+    <span class="badge b">MSPA / Dijkstra / 电路模拟 全自研</span>
+    <span class="badge r">每个数字可溯源 results/tables/*.json</span>
+    <span class="badge">全流程确定性 · 逐位可复现</span>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat"><div class="n">13</div><div class="t">生态源地（2 巨型 + 11 卫星）</div></div>
+  <div class="stat"><div class="n">1512.8 km</div><div class="t">78 对 MCR 廊道总长</div></div>
+  <div class="stat"><div class="n">16</div><div class="t">电路夹点（一级 4）</div></div>
+  <div class="stat"><div class="n">15</div><div class="t">障碍点 · 最高恢复增益 51.5%</div></div>
+</div>
+
+<h2>一、流水线一览</h2>
+<p>研究区福鼎市（闽浙交界，陆域 1611 km²），30m 分析网格 2748×2074（EPSG:32651）。
+MSPA 形态学、虚拟超级源 Dijkstra、稀疏线性系统电路模拟均为<b>手写实现</b>，可逐行讲解；
+全部输出数字由 JSON 取数自动写进报告，杜绝"手抄数字"。</p>
+
+<div class="flow">
+  <div class="step"><b>MSPA 源地</b><span>10m 原生分辨率七分类<br>核心 ≥100ha + NDVI≥0.40</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b>阻力面</b><span>5 因子 max 融合<br>low/high 敏感性双方案</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b><span class="star">MCR 廊道</span></b><span>560 万节点稀疏图<br>虚拟超级源 Dijkstra ×78 对</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b><span class="star">电路节点 ★</span></b><span>逐源 1A 注入 · spsolve<br>夹点 P95 + 恢复增量障碍点</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b>修复优先级</b><span>节点×优先区×措施<br>31 节点决策表</span></div>
+</div>
+
+<div class="note"><b>关键工程结论：</b>MSPA 不能用 30m-mode 聚合跑——mode 投票会把窄谷"吞掉"造成假连通
+（核心区虚占前景 88%、桥接=0）；换 <b>10m 原生分辨率</b>后破碎化真实呈现。
+另：scipy CSR 稀疏加法会削掉显式 0 权边，让虚拟源变孤岛全场 inf——边权加 ε=1e-3 才通。</div>
+
+<h2>二、成果图</h2>
+
+<figure>
+  <img src="results/figures/fig_mspa.png" alt="MSPA 七类景观类型" loading="lazy">
+  <figcaption><b>图 1 · MSPA 七类景观类型（10m 原生分辨率）。</b>前景=林地/灌木/草地/湿地：
+  核心区 2612.8 km² 占前景 94.5%，边缘/孔隙/支线/孤岛按形态学七类划分；
+  桥接与环道为 0 系 WorldCover 将茶园归树冠覆盖、山地县森林天然连片——破碎化体现在阻力面（局限已如实报告）。</figcaption>
+</figure>
+
+<figure>
+  <img src="results/figures/fig_sources.png" alt="13 个生态源地" loading="lazy">
+  <figcaption><b>图 2 · 生态源地。</b>13 个源地呈"两大核心 + 11 卫星"格局：
+  2 个巨型（182,614 ha 含太姥山、69,237 ha）+ 11 个卫星斑块（100~984 ha），
+  NDVI 0.648~0.79 全部健康，2 处与 OSM 保护地相交。</figcaption>
+</figure>
+
+<figure>
+  <img src="results/figures/fig_corridors.png" alt="78 对 MCR 廊道" loading="lazy">
+  <figcaption><b>图 3 · MCR 生态廊道 ×78 对（橙线）与高速/主干道路（红线）。</b>
+  总长 1512.8 km（平均 19.4 km，最长 59.2 km），穿越地类以林地 81.7% 为主；
+  廊道与道路的交锋带即阻力热点。敏感性：道路/居民点阻力 ×0.5/×2 后同对廊道 90m 缓冲
+  Jaccard 重合率 0.423/0.412——<b>骨架稳、线位随阻力参数可动</b>。</figcaption>
+</figure>
+
+<figure>
+  <img src="results/figures/fig_nodes.png" alt="电流密度与关键节点" loading="lazy">
+  <figcaption><b>图 4 · 廊道网络电流密度与关键节点。</b>在 18163 节点廊道网络上逐源注入 1A、
+  其余源地接地，spsolve 解稀疏电压场：累计电流（逐源注入）越大=生态流越"必经"。
+  电流 P95 聚类为 <b>16 夹点</b>（蓝圈，蓝深=等级高）；恢复增量法得 <b>15 障碍点</b>（红方块）——
+  耕地/建成区窗口恢复成林地后重算 MCR，最高单点增益 51.5%。</figcaption>
+</figure>
+
+<figure>
+  <img src="results/figures/fig_priority.png" alt="修复优先级布局" loading="lazy">
+  <figcaption><b>图 5 · 修复优先级布局（底色=姊妹项目修复优先区分级）。</b>
+  31 个节点按"节点等级 × 姊妹项目优先区 × 障碍增益 × 退化度 × 保护地邻近"打分排序，
+  5/31 命中姊妹项目一级优先区——"面"上诊断与"线点"上方案空间互证；
+  措施决策表：道路节点→动物通道改造，农地/茶园节点→缓冲带改造，裸地→客土复绿，滨海湿地→退养还湿。</figcaption>
+</figure>
+
+<h2>三、方法要点</h2>
+
+<h3>3.1 MSPA 为什么用 10m 原生分辨率</h3>
+<p>做过 30m-mode 对比实验：众数聚合把窄谷像元"投票吞掉"，核心区虚占前景 88%、桥接=0——
+假连通会直接决定廊道布局。MSPA 看形态细节必须用原生分辨率；MCR 要算力才降到 30m
+（源地是面状对象，众数重采样不丢拓扑）。Python 形态学与 Guidos 的简化差异逐条列出（3×3 结构元/边缘 1 像元），
+源地只取"核心区"类——该类与 Guidos 一致性最高。</p>
+
+<h3>3.2 阻力面：max 融合而不是加权求和</h3>
+<p>五因子（土地利用+坡度+道路+居民点+水系）取 max：求和会让"极端障碍"被其他低阻力稀释，
+max 保守且可解释（最差一票否决）。道路做指数衰减场（路面 400，λ=300m 衰减到背景）。
+阻力值逐条标注依据：文献锚点（林地 1 / 建成区 100）+ 经验值（耕地 30 等），并用 low/high 敏感性量化影响。</p>
+
+<h3>3.3 电路理论：廊道网络简化口径（保守方向）</h3>
+<p>全景观 Circuitscape 需要解 560 万节点线性系统，算力不够；改为在已提取的廊道网络上模拟——
+夹点位置偏保守（漏报比虚报安全），如实写进局限。夹点="现状生态流瓶颈"（保住它、防切割），
+障碍点="修复收益最大位置"（改造它、促恢复）——一个防退化、一个促恢复，措施不同。</p>
+
+<h2>四、优点与局限</h2>
+<ul>
+  <li><b>优点</b>：MSPA/Dijkstra/电路模拟全自研可逐行讲解；每个数字可溯源 JSON；
+    全流程确定性无随机数；敏感性双方案量化经验值风险；与姊妹项目优先区空间互证。</li>
+  <li><b>局限</b>：WorldCover 园地口径致桥接=0、滩涂源地缺失（有三调应重跑）；电路为廊道网络简化口径；
+    阻力值多为经验值；连通性≠工程可行性；无野外验证（下一步：20~30 验证点实地核查）。</li>
+</ul>
+
+<div class="cta">
+  <a class="btn" href="https://github.com/dingdjfjs-star/fuding-eco-network">GitHub 仓库（完整代码 + 结果栅格）</a>
+  <a class="btn ghost" href="report/项目报告.md">完整项目报告 report/项目报告.md</a>
+  <a class="btn ghost" href="docs/小白学习手册.md">小白学习手册</a>
+</div>
+
+<footer>
+  福鼎市生态网络构建与修复关键节点识别 · MSPA + 电路理论 · Python + rasterio + scipy ·
+  夜跑自动化流水线（9 阶段）· 全流程确定性可复现 · 12 项工程踩坑全留痕
+</footer>
+
+</div>
+</body>
+</html>

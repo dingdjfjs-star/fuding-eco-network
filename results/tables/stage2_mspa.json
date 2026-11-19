@@ -1,0 +1,151 @@
+{
+  "version": "v2 MSPA@10m 原生分辨率（前景=WC10/20/30/90）；v1@30m-mode 诊断保留作对比",
+  "v1_30m_mode_diagnosis": {
+    "core_pct_of_fg": 88.0,
+    "bridge_px": 0,
+    "loop_px": 0,
+    "note": "mode 重采样把 30~100m 宽的窄谷/细廊道吸收进林地，全图近乎连成一块，MSPA 失去分辨能力 -> 弃用"
+  },
+  "foreground10": {
+    "px": 27653050,
+    "km2": 2765.3,
+    "classes": "WC10林地+20灌木+30草地+90湿地；茶园(40)/建成区(50)/水体(80)不进前景"
+  },
+  "mspa10": {
+    "核心区": {
+      "px": 26128098,
+      "ha": 261281.0,
+      "pct": 51.79
+    },
+    "边缘": {
+      "px": 249672,
+      "ha": 2496.7,
+      "pct": 0.49
+    },
+    "孔隙": {
+      "px": 1042363,
+      "ha": 10423.6,
+      "pct": 2.07
+    },
+    "桥接区": {
+      "px": 0,
+      "ha": 0.0,
+      "pct": 0.0
+    },
+    "环道": {
+      "px": 0,
+      "ha": 0.0,
+      "pct": 0.0
+    },
+    "支线": {
+      "px": 187525,
+      "ha": 1875.2,
+      "pct": 0.37
+    },
+    "孤岛": {
+      "px": 45392,
+      "ha": 453.9,
+      "pct": 0.09
+    }
+  },
+  "core_patches": {
+    "all_count": 7772,
+    "ge100ha_count": 16,
+    "ge100ha_area_ha": 258043.7,
+    "src_min_ha": 100,
+    "src_min_ndvi": 0.4,
+    "sources": [
+      {
+        "id": 2,
+        "area_ha": 182614.2,
+        "ndvi": 0.782,
+        "reserve": true
+      },
+      {
+        "id": 11,
+        "area_ha": 69237.2,
+        "ndvi": 0.769,
+        "reserve": false
+      },
+      {
+        "id": 2305,
+        "area_ha": 983.8,
+        "ndvi": 0.721,
+        "reserve": false
+      },
+      {
+        "id": 5959,
+        "area_ha": 850.9,
+        "ndvi": 0.71,
+        "reserve": true
+      },
+      {
+        "id": 2909,
+        "area_ha": 348.3,
+        "ndvi": 0.713,
+        "reserve": false
+      },
+      {
+        "id": 2364,
+        "area_ha": 348.1,
+        "ndvi": 0.706,
+        "reserve": false
+      },
+      {
+        "id": 3945,
+        "area_ha": 297.9,
+        "ndvi": 0.648,
+        "reserve": false
+      },
+      {
+        "id": 5196,
+        "area_ha": 280.9,
+        "ndvi": 0.729,
+        "reserve": false
+      },
+      {
+        "id": 2602,
+        "area_ha": 160.4,
+        "ndvi": 0.742,
+        "reserve": false
+      },
+      {
+        "id": 5357,
+        "area_ha": 150.0,
+        "ndvi": 0.775,
+        "reserve": false
+      },
+      {
+        "id": 1823,
+        "area_ha": 114.1,
+        "ndvi": 0.781,
+        "reserve": false
+      },
+      {
+        "id": 4337,
+        "area_ha": 105.6,
+        "ndvi": 0.688,
+        "reserve": false
+      },
+      {
+        "id": 1109,
+        "area_ha": 100.3,
+        "ndvi": 0.79,
+        "reserve": false
+      }
+    ],
+    "source_count": 13,
+    "source_area_ha": 255591.7
+  },
+  "simplified_vs_guidos": [
+    "结构元固定3x3/8邻接，边缘宽度1像元(10m)，无第三维与自定义宽度",
+    "bridge/loop/branch 用连通函数近似（接触核心数/接触点聚类）替代形态学收窄精确口径",
+    "与核心直接相接的1像元过渡带计入边缘，Guidos 会把细廊道整体归桥接",
+    "源地只用核心区类——该类口径保守、与 Guidos 一致性最高，对后续廊道无系统性偏差"
+  ],
+  "caveat": [
+    "WorldCover 湿地类(90)极少，滩涂源地系统性缺失【受限口径·需我确认】",
+    "草地(30)含园地草被混分，作前景偏宽——由 NDVI 门槛与面积阈值兜底",
+    "源地筛选阈值 100ha/NDVI0.40 为默认方案【需我确认】"
+  ]
+}

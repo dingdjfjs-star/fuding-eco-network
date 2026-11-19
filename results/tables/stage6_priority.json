@@ -1,0 +1,915 @@
+{
+  "scoring": "等级分(一级3/二级2/一般1)+2点项目一级优先区(+2)/二级(+1)+障碍增益/10+退化度×2+保护地500m(+0.5)，满分约8.5",
+  "counts": {
+    "barrier-一级": 5,
+    "barrier-二级": 10,
+    "pinch-一级": 4,
+    "pinch-一般": 8,
+    "pinch-二级": 4
+  },
+  "overlay": {
+    "节点落在2点项目一级优先区": "5/31",
+    "保护地500m内": 0,
+    "3级道路120m内": 2
+  },
+  "corridor_total_km": 1512.8,
+  "sensitivity": {
+    "design": "道路+居民点阻力×0.5(low)/×2.0(high)；90m缓冲同对Jaccard",
+    "n": 78,
+    "jaccard_low_mean": 0.423,
+    "jaccard_high_mean": 0.412,
+    "len_change_low_mean_pct": -0.2,
+    "len_change_high_mean_pct": 5.0,
+    "per_pair": [
+      {
+        "pair": [
+          2,
+          11
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2,
+          1109
+        ],
+        "jaccard_low": 0.371,
+        "jaccard_high": 0.076,
+        "len_change_low_pct": -0.6,
+        "len_change_high_pct": 10.8
+      },
+      {
+        "pair": [
+          2,
+          1823
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.298,
+        "len_change_low_pct": -15.2,
+        "len_change_high_pct": 1.7
+      },
+      {
+        "pair": [
+          2,
+          2305
+        ],
+        "jaccard_low": 0.528,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 0.5,
+        "len_change_high_pct": 20.5
+      },
+      {
+        "pair": [
+          2,
+          2364
+        ],
+        "jaccard_low": 0.807,
+        "jaccard_high": 0.71,
+        "len_change_low_pct": 0.4,
+        "len_change_high_pct": -1.8
+      },
+      {
+        "pair": [
+          2,
+          2602
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.6,
+        "len_change_low_pct": 54.0,
+        "len_change_high_pct": 6.9
+      },
+      {
+        "pair": [
+          2,
+          2909
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2,
+          3945
+        ],
+        "jaccard_low": 0.714,
+        "jaccard_high": 0.496,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 3.2
+      },
+      {
+        "pair": [
+          2,
+          4337
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2,
+          5196
+        ],
+        "jaccard_low": 0.993,
+        "jaccard_high": 0.498,
+        "len_change_low_pct": 0.2,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          2,
+          5357
+        ],
+        "jaccard_low": 0.982,
+        "jaccard_high": 0.082,
+        "len_change_low_pct": 0.4,
+        "len_change_high_pct": 0.4
+      },
+      {
+        "pair": [
+          2,
+          5959
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 39.7
+      },
+      {
+        "pair": [
+          11,
+          1109
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          1823
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          2305
+        ],
+        "jaccard_low": 0.699,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          2364
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          2602
+        ],
+        "jaccard_low": 0.247,
+        "jaccard_high": 0.452,
+        "len_change_low_pct": -0.7,
+        "len_change_high_pct": 3.1
+      },
+      {
+        "pair": [
+          11,
+          2909
+        ],
+        "jaccard_low": 0.207,
+        "jaccard_high": 0.349,
+        "len_change_low_pct": -1.8,
+        "len_change_high_pct": -3.0
+      },
+      {
+        "pair": [
+          11,
+          3945
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          4337
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 51.9,
+        "len_change_high_pct": 183.0
+      },
+      {
+        "pair": [
+          11,
+          5196
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          5357
+        ],
+        "jaccard_low": 0.719,
+        "jaccard_high": 0.302,
+        "len_change_low_pct": 2.7,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          5959
+        ],
+        "jaccard_low": 0.285,
+        "jaccard_high": 0.571,
+        "len_change_low_pct": -1.7,
+        "len_change_high_pct": 1.3
+      },
+      {
+        "pair": [
+          1109,
+          1823
+        ],
+        "jaccard_low": 0.387,
+        "jaccard_high": 0.846,
+        "len_change_low_pct": 0.2,
+        "len_change_high_pct": 0.7
+      },
+      {
+        "pair": [
+          1109,
+          2305
+        ],
+        "jaccard_low": 0.703,
+        "jaccard_high": 0.056,
+        "len_change_low_pct": -0.2,
+        "len_change_high_pct": 7.6
+      },
+      {
+        "pair": [
+          1109,
+          2364
+        ],
+        "jaccard_low": 0.437,
+        "jaccard_high": 0.359,
+        "len_change_low_pct": -0.4,
+        "len_change_high_pct": 0.6
+      },
+      {
+        "pair": [
+          1109,
+          2602
+        ],
+        "jaccard_low": 0.323,
+        "jaccard_high": 0.145,
+        "len_change_low_pct": -0.8,
+        "len_change_high_pct": 4.5
+      },
+      {
+        "pair": [
+          1109,
+          2909
+        ],
+        "jaccard_low": 0.442,
+        "jaccard_high": 0.264,
+        "len_change_low_pct": -0.5,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1109,
+          3945
+        ],
+        "jaccard_low": 0.449,
+        "jaccard_high": 0.409,
+        "len_change_low_pct": -1.2,
+        "len_change_high_pct": 0.9
+      },
+      {
+        "pair": [
+          1109,
+          4337
+        ],
+        "jaccard_low": 0.458,
+        "jaccard_high": 0.416,
+        "len_change_low_pct": -1.0,
+        "len_change_high_pct": 0.7
+      },
+      {
+        "pair": [
+          1109,
+          5196
+        ],
+        "jaccard_low": 0.2,
+        "jaccard_high": 0.536,
+        "len_change_low_pct": -3.0,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1109,
+          5357
+        ],
+        "jaccard_low": 0.245,
+        "jaccard_high": 0.507,
+        "len_change_low_pct": -2.4,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1109,
+          5959
+        ],
+        "jaccard_low": 0.372,
+        "jaccard_high": 0.364,
+        "len_change_low_pct": -1.2,
+        "len_change_high_pct": 0.9
+      },
+      {
+        "pair": [
+          1823,
+          2305
+        ],
+        "jaccard_low": 0.296,
+        "jaccard_high": 0.196,
+        "len_change_low_pct": 0.7,
+        "len_change_high_pct": 3.5
+      },
+      {
+        "pair": [
+          1823,
+          2364
+        ],
+        "jaccard_low": 0.021,
+        "jaccard_high": 0.165,
+        "len_change_low_pct": -8.4,
+        "len_change_high_pct": -0.9
+      },
+      {
+        "pair": [
+          1823,
+          2602
+        ],
+        "jaccard_low": 0.227,
+        "jaccard_high": 0.43,
+        "len_change_low_pct": 0.5,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1823,
+          2909
+        ],
+        "jaccard_low": 0.038,
+        "jaccard_high": 0.333,
+        "len_change_low_pct": -2.1,
+        "len_change_high_pct": 0.1
+      },
+      {
+        "pair": [
+          1823,
+          3945
+        ],
+        "jaccard_low": 0.191,
+        "jaccard_high": 0.323,
+        "len_change_low_pct": -8.5,
+        "len_change_high_pct": 0.5
+      },
+      {
+        "pair": [
+          1823,
+          4337
+        ],
+        "jaccard_low": 0.226,
+        "jaccard_high": 0.34,
+        "len_change_low_pct": -7.3,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1823,
+          5196
+        ],
+        "jaccard_low": 0.319,
+        "jaccard_high": 0.486,
+        "len_change_low_pct": -3.7,
+        "len_change_high_pct": 0.8
+      },
+      {
+        "pair": [
+          1823,
+          5357
+        ],
+        "jaccard_low": 0.346,
+        "jaccard_high": 0.437,
+        "len_change_low_pct": -1.1,
+        "len_change_high_pct": 0.6
+      },
+      {
+        "pair": [
+          1823,
+          5959
+        ],
+        "jaccard_low": 0.251,
+        "jaccard_high": 0.444,
+        "len_change_low_pct": -2.3,
+        "len_change_high_pct": 1.4
+      },
+      {
+        "pair": [
+          2305,
+          2364
+        ],
+        "jaccard_low": 0.455,
+        "jaccard_high": 0.504,
+        "len_change_low_pct": -0.2,
+        "len_change_high_pct": 2.0
+      },
+      {
+        "pair": [
+          2305,
+          2602
+        ],
+        "jaccard_low": 0.223,
+        "jaccard_high": 0.962,
+        "len_change_low_pct": 4.8,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2305,
+          2909
+        ],
+        "jaccard_low": 0.869,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 8.2,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2305,
+          3945
+        ],
+        "jaccard_low": 0.602,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 1.8,
+        "len_change_high_pct": -13.6
+      },
+      {
+        "pair": [
+          2305,
+          4337
+        ],
+        "jaccard_low": 0.424,
+        "jaccard_high": 0.178,
+        "len_change_low_pct": -3.9,
+        "len_change_high_pct": 4.7
+      },
+      {
+        "pair": [
+          2305,
+          5196
+        ],
+        "jaccard_low": 0.126,
+        "jaccard_high": 0.259,
+        "len_change_low_pct": -7.9,
+        "len_change_high_pct": 6.1
+      },
+      {
+        "pair": [
+          2305,
+          5357
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.123,
+        "len_change_low_pct": 14.0,
+        "len_change_high_pct": -2.9
+      },
+      {
+        "pair": [
+          2305,
+          5959
+        ],
+        "jaccard_low": 0.401,
+        "jaccard_high": 0.255,
+        "len_change_low_pct": -0.2,
+        "len_change_high_pct": 11.3
+      },
+      {
+        "pair": [
+          2364,
+          2602
+        ],
+        "jaccard_low": 0.381,
+        "jaccard_high": 0.48,
+        "len_change_low_pct": -0.3,
+        "len_change_high_pct": 2.2
+      },
+      {
+        "pair": [
+          2364,
+          2909
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.63,
+        "len_change_low_pct": -14.0,
+        "len_change_high_pct": -3.0
+      },
+      {
+        "pair": [
+          2364,
+          3945
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.117,
+        "len_change_low_pct": 7.6,
+        "len_change_high_pct": -1.5
+      },
+      {
+        "pair": [
+          2364,
+          4337
+        ],
+        "jaccard_low": 0.532,
+        "jaccard_high": 0.378,
+        "len_change_low_pct": -2.3,
+        "len_change_high_pct": -0.7
+      },
+      {
+        "pair": [
+          2364,
+          5196
+        ],
+        "jaccard_low": 0.15,
+        "jaccard_high": 0.259,
+        "len_change_low_pct": -4.8,
+        "len_change_high_pct": 5.0
+      },
+      {
+        "pair": [
+          2364,
+          5357
+        ],
+        "jaccard_low": 0.362,
+        "jaccard_high": 0.174,
+        "len_change_low_pct": -4.9,
+        "len_change_high_pct": -6.7
+      },
+      {
+        "pair": [
+          2364,
+          5959
+        ],
+        "jaccard_low": 0.272,
+        "jaccard_high": 0.269,
+        "len_change_low_pct": -2.6,
+        "len_change_high_pct": 1.1
+      },
+      {
+        "pair": [
+          2602,
+          2909
+        ],
+        "jaccard_low": 0.205,
+        "jaccard_high": 0.303,
+        "len_change_low_pct": -7.3,
+        "len_change_high_pct": -0.6
+      },
+      {
+        "pair": [
+          2602,
+          3945
+        ],
+        "jaccard_low": 0.29,
+        "jaccard_high": 0.405,
+        "len_change_low_pct": -3.5,
+        "len_change_high_pct": -0.2
+      },
+      {
+        "pair": [
+          2602,
+          4337
+        ],
+        "jaccard_low": 0.134,
+        "jaccard_high": 0.131,
+        "len_change_low_pct": -0.6,
+        "len_change_high_pct": 0.5
+      },
+      {
+        "pair": [
+          2602,
+          5196
+        ],
+        "jaccard_low": 0.169,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": -6.6,
+        "len_change_high_pct": 30.9
+      },
+      {
+        "pair": [
+          2602,
+          5357
+        ],
+        "jaccard_low": 0.41,
+        "jaccard_high": 0.08,
+        "len_change_low_pct": -0.1,
+        "len_change_high_pct": 21.7
+      },
+      {
+        "pair": [
+          2602,
+          5959
+        ],
+        "jaccard_low": 0.364,
+        "jaccard_high": 0.178,
+        "len_change_low_pct": 0.2,
+        "len_change_high_pct": 10.9
+      },
+      {
+        "pair": [
+          2909,
+          3945
+        ],
+        "jaccard_low": 0.291,
+        "jaccard_high": 0.322,
+        "len_change_low_pct": 0.8,
+        "len_change_high_pct": -0.3
+      },
+      {
+        "pair": [
+          2909,
+          4337
+        ],
+        "jaccard_low": 0.856,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 0.5,
+        "len_change_high_pct": -13.9
+      },
+      {
+        "pair": [
+          2909,
+          5196
+        ],
+        "jaccard_low": 0.161,
+        "jaccard_high": 0.016,
+        "len_change_low_pct": -4.7,
+        "len_change_high_pct": 5.7
+      },
+      {
+        "pair": [
+          2909,
+          5357
+        ],
+        "jaccard_low": 0.019,
+        "jaccard_high": 0.401,
+        "len_change_low_pct": -6.0,
+        "len_change_high_pct": 1.2
+      },
+      {
+        "pair": [
+          2909,
+          5959
+        ],
+        "jaccard_low": 0.042,
+        "jaccard_high": 0.309,
+        "len_change_low_pct": -0.6,
+        "len_change_high_pct": 8.0
+      },
+      {
+        "pair": [
+          3945,
+          4337
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          3945,
+          5196
+        ],
+        "jaccard_low": 0.154,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": -4.9,
+        "len_change_high_pct": 4.9
+      },
+      {
+        "pair": [
+          3945,
+          5357
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.361,
+        "len_change_low_pct": -15.6,
+        "len_change_high_pct": 1.4
+      },
+      {
+        "pair": [
+          3945,
+          5959
+        ],
+        "jaccard_low": 0.159,
+        "jaccard_high": 0.086,
+        "len_change_low_pct": -6.1,
+        "len_change_high_pct": 14.2
+      },
+      {
+        "pair": [
+          4337,
+          5196
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.255,
+        "len_change_low_pct": 2.9,
+        "len_change_high_pct": -2.7
+      },
+      {
+        "pair": [
+          4337,
+          5357
+        ],
+        "jaccard_low": 0.354,
+        "jaccard_high": 0.168,
+        "len_change_low_pct": -1.0,
+        "len_change_high_pct": -3.2
+      },
+      {
+        "pair": [
+          4337,
+          5959
+        ],
+        "jaccard_low": 0.467,
+        "jaccard_high": 0.21,
+        "len_change_low_pct": -0.1,
+        "len_change_high_pct": 11.0
+      },
+      {
+        "pair": [
+          5196,
+          5357
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          5196,
+          5959
+        ],
+        "jaccard_low": 0.372,
+        "jaccard_high": 0.448,
+        "len_change_low_pct": -1.7,
+        "len_change_high_pct": 2.3
+      },
+      {
+        "pair": [
+          5357,
+          5959
+        ],
+        "jaccard_low": 0.288,
+        "jaccard_high": 0.371,
+        "len_change_low_pct": -2.0,
+        "len_change_high_pct": 2.8
+      }
+    ]
+  },
+  "top10": [
+    {
+      "rank": 1,
+      "id": "B05",
+      "type": "barrier",
+      "grade": "一级",
+      "score": 7.56,
+      "measures": [
+        "农地/茶园缓冲带改造（留养绿篱、行间补植、减药减肥）"
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "B01",
+      "type": "barrier",
+      "grade": "一级",
+      "score": 7.53,
+      "measures": [
+        "农地/茶园缓冲带改造（留养绿篱、行间补植、减药减肥）"
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "B04",
+      "type": "barrier",
+      "grade": "一级",
+      "score": 7.08,
+      "measures": [
+        "农地/茶园缓冲带改造（留养绿篱、行间补植、减药减肥）"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "B03",
+      "type": "barrier",
+      "grade": "一级",
+      "score": 6.46,
+      "measures": [
+        "封育管护+近自然补植（目标：廊道两侧30m连续郁闭）"
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "P05",
+      "type": "pinch",
+      "grade": "一级",
+      "score": 5.34,
+      "measures": [
+        "滨海/河口湿地恢复（退养还湿、潮汐连通，注意养殖权属）"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "P04",
+      "type": "pinch",
+      "grade": "一级",
+      "score": 5.09,
+      "measures": [
+        "封育管护+近自然补植（目标：廊道两侧30m连续郁闭）"
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "P08",
+      "type": "pinch",
+      "grade": "一级",
+      "score": 3.93,
+      "measures": [
+        "封育管护+近自然补植（目标：廊道两侧30m连续郁闭）"
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "B02",
+      "type": "barrier",
+      "grade": "一级",
+      "score": 3.83,
+      "measures": [
+        "农地/茶园缓冲带改造（留养绿篱、行间补植、减药减肥）"
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "P01",
+      "type": "pinch",
+      "grade": "一级",
+      "score": 3.0,
+      "measures": [
+        "封育管护+近自然补植（目标：廊道两侧30m连续郁闭）"
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "B07",
+      "type": "barrier",
+      "grade": "二级",
+      "score": 9.36,
+      "measures": [
+        "裸地复绿（矿山/采石迹地客土造林）"
+      ]
+    }
+  ],
+  "limitations": [
+    "连通性视角≠工程可行性：未考虑用地权属/资金/地形可达性/施工窗口",
+    "电路为廊道网络简化口径；障碍点为top15窗口增量重算非全网格扫描",
+    "阻力赋值多为经验值档位，敏感性分析见 stage4_mcr.json",
+    "生态红线未取得，保护地为OSM弱参考口径",
+    "滩涂源地受WorldCover口径限制未进源地（讨论见报告）"
+  ]
+}

@@ -1,0 +1,1784 @@
+{
+  "method": "8邻接稀疏图Dijkstra；边权=mean(阻力)*步长m；虚拟超级源多起点；predecessor回溯；MCR单位=阻力·m",
+  "sources": [
+    2,
+    11,
+    1109,
+    1823,
+    2305,
+    2364,
+    2602,
+    2909,
+    3945,
+    4337,
+    5196,
+    5357,
+    5959
+  ],
+  "n_pairs": 78,
+  "corridors_base": [
+    {
+      "a": 1109,
+      "b": 5959,
+      "mcr": 3782540.0,
+      "length_m": 59160.0,
+      "px": 1594,
+      "landuse": {
+        "林地": 87.5,
+        "草地": 4.5,
+        "耕地/茶园": 4.5,
+        "水体": 2.9
+      }
+    },
+    {
+      "a": 1823,
+      "b": 5959,
+      "mcr": 3586184.0,
+      "length_m": 46040.0,
+      "px": 1254,
+      "landuse": {
+        "林地": 80.7,
+        "草地": 6.3,
+        "水体": 10.9
+      }
+    },
+    {
+      "a": 1823,
+      "b": 2602,
+      "mcr": 3258765.0,
+      "length_m": 43292.0,
+      "px": 1256,
+      "landuse": {
+        "林地": 80.0,
+        "草地": 9.1,
+        "水体": 8.3
+      }
+    },
+    {
+      "a": 1823,
+      "b": 4337,
+      "mcr": 3120103.0,
+      "length_m": 37602.0,
+      "px": 1015,
+      "landuse": {
+        "林地": 81.0,
+        "草地": 7.0,
+        "水体": 11.5
+      }
+    },
+    {
+      "a": 1109,
+      "b": 5357,
+      "mcr": 3109519.0,
+      "length_m": 43842.0,
+      "px": 1264,
+      "landuse": {
+        "林地": 84.1,
+        "草地": 11.5
+      }
+    },
+    {
+      "a": 1109,
+      "b": 5196,
+      "mcr": 3057673.0,
+      "length_m": 44000.0,
+      "px": 1256,
+      "landuse": {
+        "林地": 82.7,
+        "草地": 11.9
+      }
+    },
+    {
+      "a": 1109,
+      "b": 2602,
+      "mcr": 3004233.0,
+      "length_m": 49846.0,
+      "px": 1443,
+      "landuse": {
+        "林地": 87.1,
+        "草地": 9.5
+      }
+    },
+    {
+      "a": 2602,
+      "b": 5196,
+      "mcr": 2967238.0,
+      "length_m": 44802.0,
+      "px": 1279,
+      "landuse": {
+        "林地": 81.9,
+        "草地": 12.4,
+        "水体": 2.4
+      }
+    },
+    {
+      "a": 1109,
+      "b": 4337,
+      "mcr": 2924828.0,
+      "length_m": 44928.0,
+      "px": 1219,
+      "landuse": {
+        "林地": 90.8,
+        "草地": 6.3
+      }
+    },
+    {
+      "a": 1823,
+      "b": 2909,
+      "mcr": 2819968.0,
+      "length_m": 36484.0,
+      "px": 1027,
+      "landuse": {
+        "林地": 78.6,
+        "草地": 9.9,
+        "水体": 10.1
+      }
+    },
+    {
+      "a": 1823,
+      "b": 2305,
+      "mcr": 2775296.0,
+      "length_m": 38849.0,
+      "px": 1122,
+      "landuse": {
+        "林地": 80.6,
+        "草地": 9.4,
+        "水体": 8.9
+      }
+    },
+    {
+      "a": 1823,
+      "b": 3945,
+      "mcr": 2765726.0,
+      "length_m": 33044.0,
+      "px": 885,
+      "landuse": {
+        "林地": 80.6,
+        "草地": 7.8,
+        "水体": 11.1
+      }
+    },
+    {
+      "a": 2602,
+      "b": 5357,
+      "mcr": 2682217.0,
+      "length_m": 44118.0,
+      "px": 1303,
+      "landuse": {
+        "林地": 86.0,
+        "草地": 2.4,
+        "耕地/茶园": 3.5,
+        "水体": 6.8
+      }
+    },
+    {
+      "a": 1109,
+      "b": 3945,
+      "mcr": 2570451.0,
+      "length_m": 40369.0,
+      "px": 1089,
+      "landuse": {
+        "林地": 91.6,
+        "草地": 6.9
+      }
+    },
+    {
+      "a": 1109,
+      "b": 2909,
+      "mcr": 2565435.0,
+      "length_m": 43038.0,
+      "px": 1214,
+      "landuse": {
+        "林地": 87.2,
+        "草地": 10.3
+      }
+    },
+    {
+      "a": 2,
+      "b": 1823,
+      "mcr": 2549607.0,
+      "length_m": 33212.0,
+      "px": 920,
+      "landuse": {
+        "林地": 81.2,
+        "草地": 8.8,
+        "水体": 9.0
+      }
+    },
+    {
+      "a": 1109,
+      "b": 2305,
+      "mcr": 2520763.0,
+      "length_m": 45403.0,
+      "px": 1309,
+      "landuse": {
+        "林地": 88.3,
+        "草地": 9.9
+      }
+    },
+    {
+      "a": 2305,
+      "b": 5196,
+      "mcr": 2483139.0,
+      "length_m": 40653.0,
+      "px": 1149,
+      "landuse": {
+        "林地": 82.0,
+        "草地": 13.8,
+        "水体": 2.3
+      }
+    },
+    {
+      "a": 1823,
+      "b": 2364,
+      "mcr": 2477825.0,
+      "length_m": 30193.0,
+      "px": 843,
+      "landuse": {
+        "林地": 73.8,
+        "草地": 12.9,
+        "水体": 11.9
+      }
+    },
+    {
+      "a": 4337,
+      "b": 5196,
+      "mcr": 2467667.0,
+      "length_m": 28907.0,
+      "px": 849,
+      "landuse": {
+        "林地": 67.7,
+        "草地": 2.8,
+        "耕地/茶园": 4.6,
+        "水体": 22.7
+      }
+    },
+    {
+      "a": 2909,
+      "b": 5196,
+      "mcr": 2436586.0,
+      "length_m": 30534.0,
+      "px": 856,
+      "landuse": {
+        "林地": 80.5,
+        "草地": 11.6,
+        "水体": 5.0
+      }
+    },
+    {
+      "a": 1823,
+      "b": 5357,
+      "mcr": 2373202.0,
+      "length_m": 25877.0,
+      "px": 736,
+      "landuse": {
+        "林地": 76.8,
+        "草地": 10.3,
+        "水体": 11.1
+      }
+    },
+    {
+      "a": 1823,
+      "b": 5196,
+      "mcr": 2321356.0,
+      "length_m": 26035.0,
+      "px": 728,
+      "landuse": {
+        "林地": 73.9,
+        "草地": 11.4,
+        "水体": 12.9
+      }
+    },
+    {
+      "a": 2305,
+      "b": 5357,
+      "mcr": 2317644.0,
+      "length_m": 31071.0,
+      "px": 888,
+      "landuse": {
+        "林地": 77.0,
+        "草地": 2.5,
+        "耕地/茶园": 4.5,
+        "建成区": 2.1,
+        "水体": 13.3
+      }
+    },
+    {
+      "a": 5196,
+      "b": 5959,
+      "mcr": 2247258.0,
+      "length_m": 28254.0,
+      "px": 850,
+      "landuse": {
+        "林地": 71.2,
+        "草地": 2.6,
+        "水体": 25.4
+      }
+    },
+    {
+      "a": 2,
+      "b": 1109,
+      "mcr": 2245949.0,
+      "length_m": 35409.0,
+      "px": 1033,
+      "landuse": {
+        "林地": 89.3,
+        "草地": 3.6,
+        "耕地/茶园": 6.1
+      }
+    },
+    {
+      "a": 1109,
+      "b": 2364,
+      "mcr": 2233428.0,
+      "length_m": 36917.0,
+      "px": 1034,
+      "landuse": {
+        "林地": 83.8,
+        "草地": 14.3
+      }
+    },
+    {
+      "a": 2909,
+      "b": 5357,
+      "mcr": 2226234.0,
+      "length_m": 26959.0,
+      "px": 765,
+      "landuse": {
+        "林地": 70.7,
+        "草地": 2.2,
+        "耕地/茶园": 6.8,
+        "水体": 18.4
+      }
+    },
+    {
+      "a": 3945,
+      "b": 5196,
+      "mcr": 2206616.0,
+      "length_m": 26336.0,
+      "px": 743,
+      "landuse": {
+        "林地": 81.2,
+        "草地": 12.8,
+        "水体": 3.4
+      }
+    },
+    {
+      "a": 2364,
+      "b": 5196,
+      "mcr": 2045754.0,
+      "length_m": 27960.0,
+      "px": 776,
+      "landuse": {
+        "林地": 82.2,
+        "草地": 11.9,
+        "水体": 3.5
+      }
+    },
+    {
+      "a": 2364,
+      "b": 5357,
+      "mcr": 1910405.0,
+      "length_m": 25825.0,
+      "px": 709,
+      "landuse": {
+        "林地": 79.7,
+        "草地": 7.9,
+        "水体": 10.6
+      }
+    },
+    {
+      "a": 2364,
+      "b": 5959,
+      "mcr": 1768751.0,
+      "length_m": 27278.0,
+      "px": 757,
+      "landuse": {
+        "林地": 81.9,
+        "耕地/茶园": 8.5,
+        "水体": 7.5
+      }
+    },
+    {
+      "a": 4337,
+      "b": 5357,
+      "mcr": 1757958.0,
+      "length_m": 23918.0,
+      "px": 691,
+      "landuse": {
+        "林地": 75.7,
+        "草地": 3.3,
+        "耕地/茶园": 5.6,
+        "水体": 12.7
+      }
+    },
+    {
+      "a": 3945,
+      "b": 5357,
+      "mcr": 1726812.0,
+      "length_m": 22335.0,
+      "px": 632,
+      "landuse": {
+        "林地": 69.8,
+        "耕地/茶园": 7.9,
+        "水体": 19.5
+      }
+    },
+    {
+      "a": 2909,
+      "b": 5959,
+      "mcr": 1571295.0,
+      "length_m": 21263.0,
+      "px": 612,
+      "landuse": {
+        "林地": 87.7,
+        "耕地/茶园": 2.9,
+        "建成区": 2.3,
+        "水体": 5.7
+      }
+    },
+    {
+      "a": 5357,
+      "b": 5959,
+      "mcr": 1537549.0,
+      "length_m": 23265.0,
+      "px": 692,
+      "landuse": {
+        "林地": 79.9,
+        "草地": 3.0,
+        "水体": 16.0
+      }
+    },
+    {
+      "a": 2602,
+      "b": 5959,
+      "mcr": 1477624.0,
+      "length_m": 31221.0,
+      "px": 876,
+      "landuse": {
+        "林地": 91.9,
+        "草地": 4.2
+      }
+    },
+    {
+      "a": 2305,
+      "b": 5959,
+      "mcr": 1406204.0,
+      "length_m": 22017.0,
+      "px": 674,
+      "landuse": {
+        "林地": 83.5,
+        "草地": 4.9,
+        "耕地/茶园": 3.7,
+        "建成区": 2.2,
+        "水体": 4.6
+      }
+    },
+    {
+      "a": 2,
+      "b": 5196,
+      "mcr": 1300789.0,
+      "length_m": 8132.0,
+      "px": 258,
+      "landuse": {
+        "林地": 24.8,
+        "水体": 74.0
+      }
+    },
+    {
+      "a": 2602,
+      "b": 3945,
+      "mcr": 1273753.0,
+      "length_m": 13853.0,
+      "px": 411,
+      "landuse": {
+        "林地": 67.4,
+        "草地": 9.7,
+        "耕地/茶园": 5.4,
+        "建成区": 4.6,
+        "裸地": 2.2,
+        "水体": 10.2
+      }
+    },
+    {
+      "a": 2602,
+      "b": 4337,
+      "mcr": 1254714.0,
+      "length_m": 12621.0,
+      "px": 355,
+      "landuse": {
+        "林地": 74.4,
+        "草地": 4.8,
+        "建成区": 5.1,
+        "裸地": 2.3,
+        "水体": 12.1
+      }
+    },
+    {
+      "a": 3945,
+      "b": 5959,
+      "mcr": 1228280.0,
+      "length_m": 17818.0,
+      "px": 527,
+      "landuse": {
+        "林地": 87.7,
+        "水体": 9.5
+      }
+    },
+    {
+      "a": 11,
+      "b": 5959,
+      "mcr": 1130398.0,
+      "length_m": 18412.0,
+      "px": 529,
+      "landuse": {
+        "林地": 85.3,
+        "水体": 11.0
+      }
+    },
+    {
+      "a": 1109,
+      "b": 1823,
+      "mcr": 1113077.0,
+      "length_m": 7129.0,
+      "px": 191,
+      "landuse": {
+        "林地": 49.2,
+        "草地": 3.7,
+        "水体": 47.1
+      }
+    },
+    {
+      "a": 4337,
+      "b": 5959,
+      "mcr": 1081472.0,
+      "length_m": 15515.0,
+      "px": 478,
+      "landuse": {
+        "林地": 87.9,
+        "耕地/茶园": 3.3,
+        "建成区": 2.9,
+        "水体": 4.8
+      }
+    },
+    {
+      "a": 2364,
+      "b": 2602,
+      "mcr": 1076175.0,
+      "length_m": 13261.0,
+      "px": 378,
+      "landuse": {
+        "林地": 81.0,
+        "草地": 5.0,
+        "耕地/茶园": 5.0,
+        "建成区": 6.1
+      }
+    },
+    {
+      "a": 2602,
+      "b": 2909,
+      "mcr": 793032.0,
+      "length_m": 7970.0,
+      "px": 241,
+      "landuse": {
+        "林地": 62.7,
+        "草地": 11.6,
+        "耕地/茶园": 4.6,
+        "建成区": 7.1,
+        "裸地": 4.1,
+        "水体": 9.1
+      }
+    },
+    {
+      "a": 2305,
+      "b": 3945,
+      "mcr": 716753.0,
+      "length_m": 7290.0,
+      "px": 215,
+      "landuse": {
+        "林地": 62.3,
+        "草地": 6.5,
+        "耕地/茶园": 7.0,
+        "建成区": 2.3,
+        "裸地": 4.7,
+        "水体": 17.2
+      }
+    },
+    {
+      "a": 2364,
+      "b": 4337,
+      "mcr": 664433.0,
+      "length_m": 6688.0,
+      "px": 197,
+      "landuse": {
+        "林地": 71.6,
+        "草地": 4.6,
+        "耕地/茶园": 3.0,
+        "建成区": 2.5,
+        "裸地": 4.6,
+        "水体": 13.7
+      }
+    },
+    {
+      "a": 5196,
+      "b": 5357,
+      "mcr": 656419.0,
+      "length_m": 3351.0,
+      "px": 104,
+      "landuse": {
+        "林地": 2.9,
+        "水体": 95.2
+      }
+    },
+    {
+      "a": 2305,
+      "b": 4337,
+      "mcr": 618682.0,
+      "length_m": 5620.0,
+      "px": 144,
+      "landuse": {
+        "林地": 58.3,
+        "草地": 11.8,
+        "建成区": 2.1,
+        "水体": 27.1
+      }
+    },
+    {
+      "a": 2,
+      "b": 5357,
+      "mcr": 591080.0,
+      "length_m": 3144.0,
+      "px": 100,
+      "landuse": {
+        "林地": 12.0,
+        "水体": 86.0
+      }
+    },
+    {
+      "a": 2305,
+      "b": 2364,
+      "mcr": 590355.0,
+      "length_m": 9095.0,
+      "px": 247,
+      "landuse": {
+        "林地": 76.1,
+        "草地": 12.6,
+        "耕地/茶园": 6.1,
+        "建成区": 4.5
+      }
+    },
+    {
+      "a": 11,
+      "b": 2602,
+      "mcr": 564929.0,
+      "length_m": 4014.0,
+      "px": 117,
+      "landuse": {
+        "林地": 70.9,
+        "建成区": 16.2,
+        "裸地": 4.3,
+        "水体": 5.1
+      }
+    },
+    {
+      "a": 2,
+      "b": 2364,
+      "mcr": 551394.0,
+      "length_m": 7030.0,
+      "px": 191,
+      "landuse": {
+        "林地": 74.9,
+        "耕地/茶园": 2.1,
+        "水体": 22.5
+      }
+    },
+    {
+      "a": 11,
+      "b": 1823,
+      "mcr": 516010.0,
+      "length_m": 2671.0,
+      "px": 66,
+      "landuse": {
+        "林地": 6.1,
+        "水体": 93.9
+      }
+    },
+    {
+      "a": 2909,
+      "b": 4337,
+      "mcr": 407932.0,
+      "length_m": 3615.0,
+      "px": 95,
+      "landuse": {
+        "林地": 57.9,
+        "草地": 14.7,
+        "耕地/茶园": 2.1,
+        "水体": 24.2
+      }
+    },
+    {
+      "a": 2364,
+      "b": 3945,
+      "mcr": 395321.0,
+      "length_m": 4556.0,
+      "px": 133,
+      "landuse": {
+        "林地": 78.2,
+        "草地": 3.0,
+        "耕地/茶园": 3.8,
+        "建成区": 3.8,
+        "裸地": 3.0,
+        "水体": 8.3
+      }
+    },
+    {
+      "a": 2364,
+      "b": 2909,
+      "mcr": 382913.0,
+      "length_m": 4138.0,
+      "px": 112,
+      "landuse": {
+        "林地": 69.6,
+        "耕地/茶园": 2.7,
+        "水体": 25.9
+      }
+    },
+    {
+      "a": 2909,
+      "b": 3945,
+      "mcr": 344075.0,
+      "length_m": 2842.0,
+      "px": 80,
+      "landuse": {
+        "林地": 58.8,
+        "草地": 2.5,
+        "耕地/茶园": 12.5,
+        "建成区": 3.8,
+        "水体": 22.5
+      }
+    },
+    {
+      "a": 2305,
+      "b": 2602,
+      "mcr": 280264.0,
+      "length_m": 1452.0,
+      "px": 49,
+      "landuse": {
+        "林地": 49.0,
+        "草地": 4.1,
+        "耕地/茶园": 2.0,
+        "建成区": 30.6,
+        "裸地": 8.2,
+        "水体": 6.1
+      }
+    },
+    {
+      "a": 11,
+      "b": 4337,
+      "mcr": 269705.0,
+      "length_m": 1384.0,
+      "px": 43,
+      "landuse": {
+        "林地": 23.3,
+        "建成区": 2.3,
+        "裸地": 2.3,
+        "水体": 72.1
+      }
+    },
+    {
+      "a": 11,
+      "b": 5196,
+      "mcr": 242272.0,
+      "length_m": 2604.0,
+      "px": 70,
+      "landuse": {
+        "林地": 51.4,
+        "草地": 11.4,
+        "水体": 35.7
+      }
+    },
+    {
+      "a": 2305,
+      "b": 2909,
+      "mcr": 235452.0,
+      "length_m": 1332.0,
+      "px": 45,
+      "landuse": {
+        "林地": 13.3,
+        "草地": 17.8,
+        "建成区": 4.4,
+        "裸地": 22.2,
+        "水体": 42.2
+      }
+    },
+    {
+      "a": 2,
+      "b": 2305,
+      "mcr": 216694.0,
+      "length_m": 1131.0,
+      "px": 30,
+      "landuse": {
+        "林地": 46.7,
+        "草地": 16.7,
+        "建成区": 6.7,
+        "裸地": 3.3,
+        "水体": 26.7
+      }
+    },
+    {
+      "a": 2,
+      "b": 3945,
+      "mcr": 159511.0,
+      "length_m": 1799.0,
+      "px": 56,
+      "landuse": {
+        "林地": 71.4,
+        "水体": 28.6
+      }
+    },
+    {
+      "a": 2,
+      "b": 5959,
+      "mcr": 134485.0,
+      "length_m": 672.0,
+      "px": 23,
+      "landuse": {
+        "林地": 47.8,
+        "草地": 4.3,
+        "建成区": 4.3,
+        "裸地": 13.0,
+        "水体": 30.4
+      }
+    },
+    {
+      "a": 11,
+      "b": 5357,
+      "mcr": 128239.0,
+      "length_m": 647.0,
+      "px": 18,
+      "landuse": {
+        "林地": 11.1,
+        "建成区": 11.1,
+        "裸地": 5.6,
+        "水体": 72.2
+      }
+    },
+    {
+      "a": 3945,
+      "b": 4337,
+      "mcr": 122646.0,
+      "length_m": 710.0,
+      "px": 23,
+      "landuse": {
+        "林地": 17.4,
+        "水体": 82.6
+      }
+    },
+    {
+      "a": 11,
+      "b": 2305,
+      "mcr": 95397.0,
+      "length_m": 477.0,
+      "px": 14,
+      "landuse": {
+        "林地": 28.6,
+        "建成区": 35.7,
+        "裸地": 7.1,
+        "水体": 28.6
+      }
+    },
+    {
+      "a": 2,
+      "b": 2909,
+      "mcr": 90669.0,
+      "length_m": 537.0,
+      "px": 16,
+      "landuse": {
+        "林地": 25.0,
+        "水体": 75.0
+      }
+    },
+    {
+      "a": 11,
+      "b": 2909,
+      "mcr": 64732.0,
+      "length_m": 412.0,
+      "px": 11,
+      "landuse": {
+        "林地": 27.3,
+        "草地": 36.4,
+        "裸地": 36.4
+      }
+    },
+    {
+      "a": 2,
+      "b": 2602,
+      "mcr": 27269.0,
+      "length_m": 180.0,
+      "px": 7,
+      "landuse": {
+        "林地": 71.4,
+        "建成区": 28.6
+      }
+    },
+    {
+      "a": 11,
+      "b": 2364,
+      "mcr": 19406.0,
+      "length_m": 162.0,
+      "px": 6,
+      "landuse": {
+        "林地": 50.0,
+        "草地": 16.7,
+        "水体": 33.3
+      }
+    },
+    {
+      "a": 2,
+      "b": 4337,
+      "mcr": 18000.0,
+      "length_m": 90.0,
+      "px": 4,
+      "landuse": {
+        "林地": 50.0,
+        "建成区": 50.0
+      }
+    },
+    {
+      "a": 11,
+      "b": 1109,
+      "mcr": 14485.0,
+      "length_m": 72.0,
+      "px": 3,
+      "landuse": {
+        "林地": 100.0
+      }
+    },
+    {
+      "a": 11,
+      "b": 3945,
+      "mcr": 14485.0,
+      "length_m": 72.0,
+      "px": 3,
+      "landuse": {
+        "林地": 66.7,
+        "建成区": 33.3
+      }
+    },
+    {
+      "a": 2,
+      "b": 11,
+      "mcr": 12000.0,
+      "length_m": 60.0,
+      "px": 3,
+      "landuse": {
+        "林地": 66.7,
+        "建成区": 33.3
+      }
+    }
+  ],
+  "landuse_all_base": {
+    "林地": 81.7,
+    "水体": 8.7,
+    "草地": 7.4,
+    "耕地/茶园": 1.5,
+    "建成区": 0.5,
+    "裸地": 0.2
+  },
+  "length_stats": {
+    "total_km": 1512.8,
+    "mean_km": 19.4,
+    "max_km": 59.16
+  },
+  "sensitivity": {
+    "design": "道路+居民点阻力×0.5(low)/×2.0(high)；90m缓冲同对Jaccard",
+    "n": 78,
+    "jaccard_low_mean": 0.423,
+    "jaccard_high_mean": 0.412,
+    "len_change_low_mean_pct": -0.2,
+    "len_change_high_mean_pct": 5.0,
+    "per_pair": [
+      {
+        "pair": [
+          2,
+          11
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2,
+          1109
+        ],
+        "jaccard_low": 0.371,
+        "jaccard_high": 0.076,
+        "len_change_low_pct": -0.6,
+        "len_change_high_pct": 10.8
+      },
+      {
+        "pair": [
+          2,
+          1823
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.298,
+        "len_change_low_pct": -15.2,
+        "len_change_high_pct": 1.7
+      },
+      {
+        "pair": [
+          2,
+          2305
+        ],
+        "jaccard_low": 0.528,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 0.5,
+        "len_change_high_pct": 20.5
+      },
+      {
+        "pair": [
+          2,
+          2364
+        ],
+        "jaccard_low": 0.807,
+        "jaccard_high": 0.71,
+        "len_change_low_pct": 0.4,
+        "len_change_high_pct": -1.8
+      },
+      {
+        "pair": [
+          2,
+          2602
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.6,
+        "len_change_low_pct": 54.0,
+        "len_change_high_pct": 6.9
+      },
+      {
+        "pair": [
+          2,
+          2909
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2,
+          3945
+        ],
+        "jaccard_low": 0.714,
+        "jaccard_high": 0.496,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 3.2
+      },
+      {
+        "pair": [
+          2,
+          4337
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2,
+          5196
+        ],
+        "jaccard_low": 0.993,
+        "jaccard_high": 0.498,
+        "len_change_low_pct": 0.2,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          2,
+          5357
+        ],
+        "jaccard_low": 0.982,
+        "jaccard_high": 0.082,
+        "len_change_low_pct": 0.4,
+        "len_change_high_pct": 0.4
+      },
+      {
+        "pair": [
+          2,
+          5959
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 39.7
+      },
+      {
+        "pair": [
+          11,
+          1109
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          1823
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          2305
+        ],
+        "jaccard_low": 0.699,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          2364
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          2602
+        ],
+        "jaccard_low": 0.247,
+        "jaccard_high": 0.452,
+        "len_change_low_pct": -0.7,
+        "len_change_high_pct": 3.1
+      },
+      {
+        "pair": [
+          11,
+          2909
+        ],
+        "jaccard_low": 0.207,
+        "jaccard_high": 0.349,
+        "len_change_low_pct": -1.8,
+        "len_change_high_pct": -3.0
+      },
+      {
+        "pair": [
+          11,
+          3945
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          4337
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 51.9,
+        "len_change_high_pct": 183.0
+      },
+      {
+        "pair": [
+          11,
+          5196
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          5357
+        ],
+        "jaccard_low": 0.719,
+        "jaccard_high": 0.302,
+        "len_change_low_pct": 2.7,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          11,
+          5959
+        ],
+        "jaccard_low": 0.285,
+        "jaccard_high": 0.571,
+        "len_change_low_pct": -1.7,
+        "len_change_high_pct": 1.3
+      },
+      {
+        "pair": [
+          1109,
+          1823
+        ],
+        "jaccard_low": 0.387,
+        "jaccard_high": 0.846,
+        "len_change_low_pct": 0.2,
+        "len_change_high_pct": 0.7
+      },
+      {
+        "pair": [
+          1109,
+          2305
+        ],
+        "jaccard_low": 0.703,
+        "jaccard_high": 0.056,
+        "len_change_low_pct": -0.2,
+        "len_change_high_pct": 7.6
+      },
+      {
+        "pair": [
+          1109,
+          2364
+        ],
+        "jaccard_low": 0.437,
+        "jaccard_high": 0.359,
+        "len_change_low_pct": -0.4,
+        "len_change_high_pct": 0.6
+      },
+      {
+        "pair": [
+          1109,
+          2602
+        ],
+        "jaccard_low": 0.323,
+        "jaccard_high": 0.145,
+        "len_change_low_pct": -0.8,
+        "len_change_high_pct": 4.5
+      },
+      {
+        "pair": [
+          1109,
+          2909
+        ],
+        "jaccard_low": 0.442,
+        "jaccard_high": 0.264,
+        "len_change_low_pct": -0.5,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1109,
+          3945
+        ],
+        "jaccard_low": 0.449,
+        "jaccard_high": 0.409,
+        "len_change_low_pct": -1.2,
+        "len_change_high_pct": 0.9
+      },
+      {
+        "pair": [
+          1109,
+          4337
+        ],
+        "jaccard_low": 0.458,
+        "jaccard_high": 0.416,
+        "len_change_low_pct": -1.0,
+        "len_change_high_pct": 0.7
+      },
+      {
+        "pair": [
+          1109,
+          5196
+        ],
+        "jaccard_low": 0.2,
+        "jaccard_high": 0.536,
+        "len_change_low_pct": -3.0,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1109,
+          5357
+        ],
+        "jaccard_low": 0.245,
+        "jaccard_high": 0.507,
+        "len_change_low_pct": -2.4,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1109,
+          5959
+        ],
+        "jaccard_low": 0.372,
+        "jaccard_high": 0.364,
+        "len_change_low_pct": -1.2,
+        "len_change_high_pct": 0.9
+      },
+      {
+        "pair": [
+          1823,
+          2305
+        ],
+        "jaccard_low": 0.296,
+        "jaccard_high": 0.196,
+        "len_change_low_pct": 0.7,
+        "len_change_high_pct": 3.5
+      },
+      {
+        "pair": [
+          1823,
+          2364
+        ],
+        "jaccard_low": 0.021,
+        "jaccard_high": 0.165,
+        "len_change_low_pct": -8.4,
+        "len_change_high_pct": -0.9
+      },
+      {
+        "pair": [
+          1823,
+          2602
+        ],
+        "jaccard_low": 0.227,
+        "jaccard_high": 0.43,
+        "len_change_low_pct": 0.5,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1823,
+          2909
+        ],
+        "jaccard_low": 0.038,
+        "jaccard_high": 0.333,
+        "len_change_low_pct": -2.1,
+        "len_change_high_pct": 0.1
+      },
+      {
+        "pair": [
+          1823,
+          3945
+        ],
+        "jaccard_low": 0.191,
+        "jaccard_high": 0.323,
+        "len_change_low_pct": -8.5,
+        "len_change_high_pct": 0.5
+      },
+      {
+        "pair": [
+          1823,
+          4337
+        ],
+        "jaccard_low": 0.226,
+        "jaccard_high": 0.34,
+        "len_change_low_pct": -7.3,
+        "len_change_high_pct": 0.2
+      },
+      {
+        "pair": [
+          1823,
+          5196
+        ],
+        "jaccard_low": 0.319,
+        "jaccard_high": 0.486,
+        "len_change_low_pct": -3.7,
+        "len_change_high_pct": 0.8
+      },
+      {
+        "pair": [
+          1823,
+          5357
+        ],
+        "jaccard_low": 0.346,
+        "jaccard_high": 0.437,
+        "len_change_low_pct": -1.1,
+        "len_change_high_pct": 0.6
+      },
+      {
+        "pair": [
+          1823,
+          5959
+        ],
+        "jaccard_low": 0.251,
+        "jaccard_high": 0.444,
+        "len_change_low_pct": -2.3,
+        "len_change_high_pct": 1.4
+      },
+      {
+        "pair": [
+          2305,
+          2364
+        ],
+        "jaccard_low": 0.455,
+        "jaccard_high": 0.504,
+        "len_change_low_pct": -0.2,
+        "len_change_high_pct": 2.0
+      },
+      {
+        "pair": [
+          2305,
+          2602
+        ],
+        "jaccard_low": 0.223,
+        "jaccard_high": 0.962,
+        "len_change_low_pct": 4.8,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2305,
+          2909
+        ],
+        "jaccard_low": 0.869,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 8.2,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          2305,
+          3945
+        ],
+        "jaccard_low": 0.602,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 1.8,
+        "len_change_high_pct": -13.6
+      },
+      {
+        "pair": [
+          2305,
+          4337
+        ],
+        "jaccard_low": 0.424,
+        "jaccard_high": 0.178,
+        "len_change_low_pct": -3.9,
+        "len_change_high_pct": 4.7
+      },
+      {
+        "pair": [
+          2305,
+          5196
+        ],
+        "jaccard_low": 0.126,
+        "jaccard_high": 0.259,
+        "len_change_low_pct": -7.9,
+        "len_change_high_pct": 6.1
+      },
+      {
+        "pair": [
+          2305,
+          5357
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.123,
+        "len_change_low_pct": 14.0,
+        "len_change_high_pct": -2.9
+      },
+      {
+        "pair": [
+          2305,
+          5959
+        ],
+        "jaccard_low": 0.401,
+        "jaccard_high": 0.255,
+        "len_change_low_pct": -0.2,
+        "len_change_high_pct": 11.3
+      },
+      {
+        "pair": [
+          2364,
+          2602
+        ],
+        "jaccard_low": 0.381,
+        "jaccard_high": 0.48,
+        "len_change_low_pct": -0.3,
+        "len_change_high_pct": 2.2
+      },
+      {
+        "pair": [
+          2364,
+          2909
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.63,
+        "len_change_low_pct": -14.0,
+        "len_change_high_pct": -3.0
+      },
+      {
+        "pair": [
+          2364,
+          3945
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.117,
+        "len_change_low_pct": 7.6,
+        "len_change_high_pct": -1.5
+      },
+      {
+        "pair": [
+          2364,
+          4337
+        ],
+        "jaccard_low": 0.532,
+        "jaccard_high": 0.378,
+        "len_change_low_pct": -2.3,
+        "len_change_high_pct": -0.7
+      },
+      {
+        "pair": [
+          2364,
+          5196
+        ],
+        "jaccard_low": 0.15,
+        "jaccard_high": 0.259,
+        "len_change_low_pct": -4.8,
+        "len_change_high_pct": 5.0
+      },
+      {
+        "pair": [
+          2364,
+          5357
+        ],
+        "jaccard_low": 0.362,
+        "jaccard_high": 0.174,
+        "len_change_low_pct": -4.9,
+        "len_change_high_pct": -6.7
+      },
+      {
+        "pair": [
+          2364,
+          5959
+        ],
+        "jaccard_low": 0.272,
+        "jaccard_high": 0.269,
+        "len_change_low_pct": -2.6,
+        "len_change_high_pct": 1.1
+      },
+      {
+        "pair": [
+          2602,
+          2909
+        ],
+        "jaccard_low": 0.205,
+        "jaccard_high": 0.303,
+        "len_change_low_pct": -7.3,
+        "len_change_high_pct": -0.6
+      },
+      {
+        "pair": [
+          2602,
+          3945
+        ],
+        "jaccard_low": 0.29,
+        "jaccard_high": 0.405,
+        "len_change_low_pct": -3.5,
+        "len_change_high_pct": -0.2
+      },
+      {
+        "pair": [
+          2602,
+          4337
+        ],
+        "jaccard_low": 0.134,
+        "jaccard_high": 0.131,
+        "len_change_low_pct": -0.6,
+        "len_change_high_pct": 0.5
+      },
+      {
+        "pair": [
+          2602,
+          5196
+        ],
+        "jaccard_low": 0.169,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": -6.6,
+        "len_change_high_pct": 30.9
+      },
+      {
+        "pair": [
+          2602,
+          5357
+        ],
+        "jaccard_low": 0.41,
+        "jaccard_high": 0.08,
+        "len_change_low_pct": -0.1,
+        "len_change_high_pct": 21.7
+      },
+      {
+        "pair": [
+          2602,
+          5959
+        ],
+        "jaccard_low": 0.364,
+        "jaccard_high": 0.178,
+        "len_change_low_pct": 0.2,
+        "len_change_high_pct": 10.9
+      },
+      {
+        "pair": [
+          2909,
+          3945
+        ],
+        "jaccard_low": 0.291,
+        "jaccard_high": 0.322,
+        "len_change_low_pct": 0.8,
+        "len_change_high_pct": -0.3
+      },
+      {
+        "pair": [
+          2909,
+          4337
+        ],
+        "jaccard_low": 0.856,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": 0.5,
+        "len_change_high_pct": -13.9
+      },
+      {
+        "pair": [
+          2909,
+          5196
+        ],
+        "jaccard_low": 0.161,
+        "jaccard_high": 0.016,
+        "len_change_low_pct": -4.7,
+        "len_change_high_pct": 5.7
+      },
+      {
+        "pair": [
+          2909,
+          5357
+        ],
+        "jaccard_low": 0.019,
+        "jaccard_high": 0.401,
+        "len_change_low_pct": -6.0,
+        "len_change_high_pct": 1.2
+      },
+      {
+        "pair": [
+          2909,
+          5959
+        ],
+        "jaccard_low": 0.042,
+        "jaccard_high": 0.309,
+        "len_change_low_pct": -0.6,
+        "len_change_high_pct": 8.0
+      },
+      {
+        "pair": [
+          3945,
+          4337
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          3945,
+          5196
+        ],
+        "jaccard_low": 0.154,
+        "jaccard_high": 0.0,
+        "len_change_low_pct": -4.9,
+        "len_change_high_pct": 4.9
+      },
+      {
+        "pair": [
+          3945,
+          5357
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.361,
+        "len_change_low_pct": -15.6,
+        "len_change_high_pct": 1.4
+      },
+      {
+        "pair": [
+          3945,
+          5959
+        ],
+        "jaccard_low": 0.159,
+        "jaccard_high": 0.086,
+        "len_change_low_pct": -6.1,
+        "len_change_high_pct": 14.2
+      },
+      {
+        "pair": [
+          4337,
+          5196
+        ],
+        "jaccard_low": 0.0,
+        "jaccard_high": 0.255,
+        "len_change_low_pct": 2.9,
+        "len_change_high_pct": -2.7
+      },
+      {
+        "pair": [
+          4337,
+          5357
+        ],
+        "jaccard_low": 0.354,
+        "jaccard_high": 0.168,
+        "len_change_low_pct": -1.0,
+        "len_change_high_pct": -3.2
+      },
+      {
+        "pair": [
+          4337,
+          5959
+        ],
+        "jaccard_low": 0.467,
+        "jaccard_high": 0.21,
+        "len_change_low_pct": -0.1,
+        "len_change_high_pct": 11.0
+      },
+      {
+        "pair": [
+          5196,
+          5357
+        ],
+        "jaccard_low": 1.0,
+        "jaccard_high": 1.0,
+        "len_change_low_pct": 0.0,
+        "len_change_high_pct": 0.0
+      },
+      {
+        "pair": [
+          5196,
+          5959
+        ],
+        "jaccard_low": 0.372,
+        "jaccard_high": 0.448,
+        "len_change_low_pct": -1.7,
+        "len_change_high_pct": 2.3
+      },
+      {
+        "pair": [
+          5357,
+          5959
+        ],
+        "jaccard_low": 0.288,
+        "jaccard_high": 0.371,
+        "len_change_low_pct": -2.0,
+        "len_change_high_pct": 2.8
+      }
+    ]
+  },
+  "note": "走廊两端点取自源地内最小累积阻力像元；穿过大斑块内部为低成本段属正常"
+}
